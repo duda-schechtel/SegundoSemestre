@@ -1,11 +1,10 @@
 package Aula17;
-import java.util.Scanner;
 
 public class Aluno extends Pessoa {
-    protected String curso;
+    private String curso;
 
     public Aluno (String nome, Integer idade, String curso){
-        this.curso = curso;
+        this.setCurso(curso);
         super (nome, idade);
     }
 
@@ -16,5 +15,13 @@ public class Aluno extends Pessoa {
     public void imprimirDados() {
         super.imprimirDados();
         System.out.println("Curso: "+ curso);
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
 }
