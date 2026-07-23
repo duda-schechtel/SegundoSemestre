@@ -8,7 +8,7 @@ public class Aluno extends Pessoa {
         super (nome, idade);
     }
 
-    public void Matricula(String curso){
+    public void matricula(String curso){
         System.out.println("Você fez matrícula");
     }
     @Override
