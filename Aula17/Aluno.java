@@ -4,7 +4,7 @@ public class Aluno extends Pessoa {
     private String curso;
 
     public Aluno (String nome, Integer idade, String curso){
-        this.setCurso(curso);
+        this.curso = curso;
         super (nome, idade);
     }
 
